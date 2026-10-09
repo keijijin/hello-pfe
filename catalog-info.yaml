@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-pfe
+  description: ゴールデンパスから作成した Web サービス
+  annotations:
+    argocd/app-name: hello-pfe
+    github.com/project-slug: keijijin/hello-pfe
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
